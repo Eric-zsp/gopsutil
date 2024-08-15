@@ -18,9 +18,9 @@ import (
 	"unicode/utf16"
 	"unsafe"
 
-	"github.com/Eric-zsp/gopsutil/v4/cpu"
-	"github.com/Eric-zsp/gopsutil/v4/internal/common"
-	"github.com/Eric-zsp/gopsutil/v4/net"
+	"gits.joyconn.cn/go-eric/gopsutil/v4/cpu"
+	"gits.joyconn.cn/go-eric/gopsutil/v4/internal/common"
+	"gits.joyconn.cn/go-eric/gopsutil/v4/net"
 	"golang.org/x/sys/windows"
 )
 

@@ -11,7 +11,7 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/Eric-zsp/gopsutil/v4/internal/common"
+	"gits.joyconn.cn/go-eric/gopsutil/v4/internal/common"
 )
 
 // Return a list of network connections opened.

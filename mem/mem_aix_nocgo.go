@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Eric-zsp/gopsutil/v4/internal/common"
+	"gits.joyconn.cn/go-eric/gopsutil/v4/internal/common"
 )
 
 func VirtualMemoryWithContext(ctx context.Context) (*VirtualMemoryStat, error) {

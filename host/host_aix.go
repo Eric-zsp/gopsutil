@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Eric-zsp/gopsutil/v4/internal/common"
+	"gits.joyconn.cn/go-eric/gopsutil/v4/internal/common"
 )
 
 // from https://www.ibm.com/docs/en/aix/7.2?topic=files-utmph-file

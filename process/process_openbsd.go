@@ -14,10 +14,10 @@ import (
 	"strings"
 	"unsafe"
 
-	cpu "github.com/Eric-zsp/gopsutil/v4/cpu"
-	"github.com/Eric-zsp/gopsutil/v4/internal/common"
-	mem "github.com/Eric-zsp/gopsutil/v4/mem"
-	net "github.com/Eric-zsp/gopsutil/v4/net"
+	cpu "gits.joyconn.cn/go-eric/gopsutil/v4/cpu"
+	"gits.joyconn.cn/go-eric/gopsutil/v4/internal/common"
+	mem "gits.joyconn.cn/go-eric/gopsutil/v4/mem"
+	net "gits.joyconn.cn/go-eric/gopsutil/v4/net"
 	"golang.org/x/sys/unix"
 )
 
@@ -167,7 +167,7 @@ func (p *Process) StatusWithContext(ctx context.Context) ([]string, error) {
 }
 
 func (p *Process) ForegroundWithContext(ctx context.Context) (bool, error) {
-	// see https://github.com/Eric-zsp/gopsutil/issues/596#issuecomment-432707831 for implementation details
+	// see https://gits.joyconn.cn/go-eric/gopsutil/issues/596#issuecomment-432707831 for implementation details
 	pid := p.Pid
 	out, err := invoke.CommandWithContext(ctx, "ps", "-o", "stat=", "-p", strconv.Itoa(int(pid)))
 	if err != nil {

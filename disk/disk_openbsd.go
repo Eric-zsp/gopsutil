@@ -8,7 +8,7 @@ import (
 	"context"
 	"encoding/binary"
 
-	"github.com/Eric-zsp/gopsutil/v4/internal/common"
+	"gits.joyconn.cn/go-eric/gopsutil/v4/internal/common"
 	"golang.org/x/sys/unix"
 )
 

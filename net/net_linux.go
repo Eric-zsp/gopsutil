@@ -16,7 +16,7 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/Eric-zsp/gopsutil/v4/internal/common"
+	"gits.joyconn.cn/go-eric/gopsutil/v4/internal/common"
 )
 
 const ( // Conntrack Column numbers
@@ -782,7 +782,7 @@ func processInetWithContext(ctx context.Context, file string, kind netConnection
 	// Read the contents of the /proc file with a single read sys call.
 	// This minimizes duplicates in the returned connections
 	// For more info:
-	// https://github.com/Eric-zsp/gopsutil/pull/361
+	// https://gits.joyconn.cn/go-eric/gopsutil/pull/361
 	contents, err := os.ReadFile(file)
 	if err != nil {
 		return nil, err
@@ -843,7 +843,7 @@ func processUnix(file string, kind netConnectionKindType, inodes map[string][]in
 	// Read the contents of the /proc file with a single read sys call.
 	// This minimizes duplicates in the returned connections
 	// For more info:
-	// https://github.com/Eric-zsp/gopsutil/pull/361
+	// https://gits.joyconn.cn/go-eric/gopsutil/pull/361
 	contents, err := os.ReadFile(file)
 	if err != nil {
 		return nil, err

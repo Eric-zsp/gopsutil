@@ -8,7 +8,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/Eric-zsp/gopsutil/v4/internal/common"
+	"gits.joyconn.cn/go-eric/gopsutil/v4/internal/common"
 )
 
 func skipIfNotImplementedErr(t *testing.T, err error) {
@@ -68,7 +68,7 @@ func TestIOCounters(t *testing.T) {
 	}
 }
 
-// https://github.com/Eric-zsp/gopsutil/issues/560 regression test
+// https://gits.joyconn.cn/go-eric/gopsutil/issues/560 regression test
 func TestIOCounters_concurrency_on_darwin_cgo(t *testing.T) {
 	if runtime.GOOS != "darwin" {
 		t.Skip("darwin only")

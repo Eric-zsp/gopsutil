@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/Eric-zsp/gopsutil/v4/cpu"
-	"github.com/Eric-zsp/gopsutil/v4/internal/common"
+	"gits.joyconn.cn/go-eric/gopsutil/v4/cpu"
+	"gits.joyconn.cn/go-eric/gopsutil/v4/internal/common"
 )
 
 var (

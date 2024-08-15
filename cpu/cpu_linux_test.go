@@ -94,7 +94,7 @@ func TestCountsAgainstLscpu(t *testing.T) {
 	}
 }
 
-func TestCountsLogicalAndroid_1037(t *testing.T) { // https://github.com/Eric-zsp/gopsutil/issues/1037
+func TestCountsLogicalAndroid_1037(t *testing.T) { // https://gits.joyconn.cn/go-eric/gopsutil/issues/1037
 	t.Setenv("HOST_PROC", "testdata/linux/1037/proc")
 
 	count, err := Counts(true)

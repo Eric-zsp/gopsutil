@@ -1,4 +1,4 @@
-module github.com/Eric-zsp/gopsutil/v4
+module gits.joyconn.cn/go-eric/gopsutil/v4
 
 go 1.18
 
