@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/shirou/gopsutil/v4/internal/common"
+	"github.com/Eric-zsp/gopsutil/v4/internal/common"
 	"github.com/tklauser/go-sysconf"
 )
 

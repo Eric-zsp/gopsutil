@@ -13,7 +13,7 @@ import (
 
 	"github.com/tklauser/go-sysconf"
 
-	"github.com/shirou/gopsutil/v4/internal/common"
+	"github.com/Eric-zsp/gopsutil/v4/internal/common"
 )
 
 var ClocksPerSec = float64(100)

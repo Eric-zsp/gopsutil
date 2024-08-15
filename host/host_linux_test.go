@@ -7,7 +7,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/shirou/gopsutil/v4/common"
+	"github.com/Eric-zsp/gopsutil/v4/common"
 )
 
 func TestGetRedhatishVersion(t *testing.T) {

@@ -20,7 +20,7 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/shirou/gopsutil/v4/cpu"
+	"github.com/Eric-zsp/gopsutil/v4/cpu"
 )
 
 var (

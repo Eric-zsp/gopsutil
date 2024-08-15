@@ -15,8 +15,8 @@ import (
 
 	"golang.org/x/sys/unix"
 
-	"github.com/shirou/gopsutil/v4/internal/common"
-	"github.com/shirou/gopsutil/v4/process"
+	"github.com/Eric-zsp/gopsutil/v4/internal/common"
+	"github.com/Eric-zsp/gopsutil/v4/process"
 )
 
 // from utmpx.h

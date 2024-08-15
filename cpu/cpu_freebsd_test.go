@@ -6,7 +6,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/shirou/gopsutil/v4/internal/common"
+	"github.com/Eric-zsp/gopsutil/v4/internal/common"
 )
 
 func TestParseDmesgBoot(t *testing.T) {

@@ -1,6 +1,6 @@
 # gopsutil: psutil for golang
 
-[![Test](https://github.com/shirou/gopsutil/actions/workflows/test.yml/badge.svg)](https://github.com/shirou/gopsutil/actions/workflows/test.yml) [![Coverage Status](https://coveralls.io/repos/github/shirou/gopsutil/badge.svg?branch=master)](https://coveralls.io/github/shirou/gopsutil?branch=master) [![Go Reference](https://pkg.go.dev/badge/github.com/shirou/gopsutil/v3.svg)](https://pkg.go.dev/github.com/shirou/gopsutil/v3) [![Go Documentation](https://godocs.io/github.com/shirou/gopsutil/v3?status.svg)](https://godocs.io/github.com/shirou/gopsutil/v3) [![Calendar Versioning](https://img.shields.io/badge/calver-vMAJOR.YY.MM-22bfda.svg)](https://calver.org/)
+[![Test](https://github.com/Eric-zsp/gopsutil/actions/workflows/test.yml/badge.svg)](https://github.com/Eric-zsp/gopsutil/actions/workflows/test.yml) [![Coverage Status](https://coveralls.io/repos/github/shirou/gopsutil/badge.svg?branch=master)](https://coveralls.io/github/shirou/gopsutil?branch=master) [![Go Reference](https://pkg.go.dev/badge/github.com/Eric-zsp/gopsutil/v3.svg)](https://pkg.go.dev/github.com/Eric-zsp/gopsutil/v3) [![Go Documentation](https://godocs.io/github.com/Eric-zsp/gopsutil/v3?status.svg)](https://godocs.io/github.com/Eric-zsp/gopsutil/v3) [![Calendar Versioning](https://img.shields.io/badge/calver-vMAJOR.YY.MM-22bfda.svg)](https://calver.org/)
 
 This is a port of psutil (https://github.com/giampaolo/psutil). The
 challenge is porting all psutil functions on some architectures.
@@ -9,7 +9,7 @@ challenge is porting all psutil functions on some architectures.
 
 ### v4 migration
 
-There are some breaking changes. Please see [v4 release note](https://github.com/shirou/gopsutil/releases/tag/v4.24.5).
+There are some breaking changes. Please see [v4 release note](https://github.com/Eric-zsp/gopsutil/releases/tag/v4.24.5).
 
 ## Tag semantics
 
@@ -51,7 +51,7 @@ package main
 import (
     "fmt"
 
-    "github.com/shirou/gopsutil/v4/mem"
+    "github.com/Eric-zsp/gopsutil/v4/mem"
 )
 
 func main() {
@@ -96,7 +96,7 @@ You can set an alternative location to `/proc/N/mountinfo` by setting the
 
 ### Adding settings using `context` (from v3.23.6)
 
-As of v3.23.6, it is now possible to pass a path location using `context`: import `"github.com/shirou/gopsutil/v3/common"` and pass a context with `common.EnvMap` set to `common.EnvKey`, and the location will be used within each function.
+As of v3.23.6, it is now possible to pass a path location using `context`: import `"github.com/Eric-zsp/gopsutil/v3/common"` and pass a context with `common.EnvMap` set to `common.EnvKey`, and the location will be used within each function.
 
 ```
 	ctx := context.WithValue(context.Background(), 
@@ -111,7 +111,7 @@ First priority is given to the value set in `context`, then the value from the e
 
 As of v3.24.1, it is now possible to cached some values. These values default to false, not cached. 
 
-Be very careful that enabling the cache may cause inconsistencies. For example, if you enable caching of boottime on Linux, be aware that unintended values may be returned if [the boottime is changed by NTP after booted](https://github.com/shirou/gopsutil/issues/1070#issuecomment-842512782).
+Be very careful that enabling the cache may cause inconsistencies. For example, if you enable caching of boottime on Linux, be aware that unintended values may be returned if [the boottime is changed by NTP after booted](https://github.com/Eric-zsp/gopsutil/issues/1070#issuecomment-842512782).
 
 - `host`
   - EnableBootTimeCache
@@ -145,7 +145,7 @@ gopsutil aims to minimize platform differences by offering common functions. How
 
 ## Documentation
 
-See https://pkg.go.dev/github.com/shirou/gopsutil/v4 or https://godocs.io/github.com/shirou/gopsutil/v4
+See https://pkg.go.dev/github.com/Eric-zsp/gopsutil/v4 or https://godocs.io/github.com/Eric-zsp/gopsutil/v4
 
 ## Requirements
 

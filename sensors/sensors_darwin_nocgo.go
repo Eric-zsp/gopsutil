@@ -6,7 +6,7 @@ package sensors
 import (
 	"context"
 
-	"github.com/shirou/gopsutil/v4/internal/common"
+	"github.com/Eric-zsp/gopsutil/v4/internal/common"
 )
 
 func TemperaturesWithContext(ctx context.Context) ([]TemperatureStat, error) {
